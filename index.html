@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exo JS</title>
+    <script src="exo_1.js"></script>
+    <script>
+
+        let resultnom = taches.map(tache => tache.nom);
+        console.log(resultnom);
+
+
+        let resultprio = taches.filter(tache => tache.priorite === 1)
+        console.log(resultprio);
+
+        // let resultduree = taches.map(tache => tache.duree).reduce((total, duree) => {
+        //     return (total || 0) + parseInt(duree);
+        // });
+        // console.log(resultduree);
+
+        let init = 0;
+        let dureebis = taches.reduce((total, tache) => {
+            total.push(tache.duree);
+            return total;
+        }, []);
+        console.log(dureebis);
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
